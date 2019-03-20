@@ -134,6 +134,10 @@ if (process.env.LOCAL_CHROME === 'true') {
     defaults.routes['/apps/beta/chrome'] = { host: PORTAL_BACKEND_MARKER };
 }
 
+defaults.routes['/insights'] = { host: `${protocol}://${localhost}:${port}` };
+defaults.routes['/tower_analytics'] = { host: `http://${localhost}:8000` };
+defaults.routes['/apps/tower-analytics'] = { host: `https://${localhost}:${port}` };
+defaults.routes['/insights_integration'] = { host: `http://${localhost}:8000` };
 defaults.routes['/'] = { host: PORTAL_BACKEND_MARKER };
 
 const CUSTOM_CONF_PATH = process.env.CUSTOM_CONF_PATH || '/config/spandx.config.js';
