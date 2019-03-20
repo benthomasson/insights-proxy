@@ -134,7 +134,7 @@ if (process.env.LOCAL_CHROME === 'true') {
     defaults.routes['/apps/beta/chrome'] = { host: PORTAL_BACKEND_MARKER };
 }
 
-defaults.routes['/insights'] = { host: `${protocol}://${localhost}:${port}` };
+//defaults.routes['/insights/static'] = { host: 'https://access.redhat.com' };
 defaults.routes['/tower_analytics'] = { host: `http://${localhost}:8000` };
 defaults.routes['/apps/tower-analytics'] = { host: `https://${localhost}:${port}` };
 defaults.routes['/insights_integration'] = { host: `http://${localhost}:8000` };
