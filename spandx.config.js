@@ -144,6 +144,7 @@ if (process.env.LOCAL_CHROME === 'true') {
 
 defaults.routes['/insights'] = { host: `${protocol}://${localhost}:${port}` };
 defaults.routes['/tower_analytics'] = { host: `http://${localhost}:8000` };
+defaults.routes['/apps/tower-analytics'] = { host: `https://${localhost}:${port}` };
 defaults.routes['/insights_integration'] = { host: `http://${localhost}:8000` };
 defaults.routes['/'] = { host: PORTAL_BACKEND_MARKER };
 
