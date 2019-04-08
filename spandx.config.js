@@ -139,7 +139,8 @@ defaults.routes['/tower_analytics'] = { host: `http://${localhost}:8000` };
 defaults.routes['/apps/tower-analytics'] = { host: `http://${localhost}:${port}` };
 defaults.routes['/apps/find-it-fix-it'] = { host: `http://${localhost}:${port}` };
 defaults.routes['/apps/remediations'] = { host: `http://${localhost}:${port}` };
-defaults.routes['/insights_integration'] = { host: `http://${localhost}:8000` };
+defaults.routes['/insights_integration'] = { host: 'https://nginx-find-it-fix-it.5a9f.insights-dev.openshiftapps.com' };
+//defaults.routes['/insights_integration'] = { host: `http://${localhost}:8000` };
 defaults.routes['/'] = { host: PORTAL_BACKEND_MARKER };
 
 const CUSTOM_CONF_PATH = process.env.CUSTOM_CONF_PATH || '/config/spandx.config.js';
